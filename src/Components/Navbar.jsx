@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container mx-auto py-5 flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <img className="w-16 sm:w-10" src="images/logo.png" alt="Logo Here" />
-          <span className="text-xl font-semibold hidden sm:block">
+          <span className="text-xl font-semibold  sm:block">
             MUSTAFA TARIQ
           </span>
         </div>

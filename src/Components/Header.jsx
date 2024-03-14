@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Typewriter } from "react-simple-typewriter";
 const Header = () => {  
   return (
-    <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 overflow-hidden">
+    <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
       <Navbar />
       {/* image */}
       <img
@@ -12,10 +12,12 @@ const Header = () => {
         src="images/image.png"
         alt="Mustafa Tariq"
       />
-      {/* circle */}
-      <div className="hidden lg:block absolute -bottom-[58%] right-0 left-0 mx-auto w-[48rem] h-[48rem] -z-10 rounded-full bg-indigo-900"></div>
+      {/* circle */}'
+      <div className='overflow-hidden'>
+        <div className="hidden lg:block absolute -bottom-[58%] right-0 left-0 mx-auto w-[48rem] h-[48rem] -z-10 rounded-full bg-indigo-900"></div>
+      </div>
       {/* animated Text */}
-      <div className="absolute top-1/4 w-full text-center sm:text-left text-6xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-32 xl:text-7xl font-bold font-nunito">
+      <div className="absolute top-1/4 w-full text-center sm:text-left text-6xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-0 xl:text-7xl font-bold font-nunito">
         <span className="text-gray-600">Frelance</span>
         <p id="typewriter" className="text-red-500">
           <Typewriter
