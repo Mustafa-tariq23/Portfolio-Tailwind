@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const About = () => {
   return (
-    <div className="absolute bg-white h-full w-full">
+    <div className=" bg-white h-full w-full dark:bg-slate-900">
       <Navbar />
       <div className="container mx-auto flex-col-reverse lg:flex-row flex py-40 gap-40">
         {/* section one */}

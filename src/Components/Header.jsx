@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Typewriter } from "react-simple-typewriter";
 const Header = () => {  
   return (
-    <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
+    <div className="h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900">
       <Navbar />
       {/* image */}
       <img
@@ -18,22 +18,22 @@ const Header = () => {
       </div>
       {/* animated Text */}
       <div className="absolute top-1/4 w-full text-center sm:text-left text-6xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-0 xl:text-7xl font-bold font-nunito">
-        <span className="text-gray-600">Frelance</span>
-        <p id="typewriter" className="text-red-500">
+        <span className="text-gray-600 dark:text-gray-100">Frelance</span>
+        <p id="typewriter" className="text-red-500 dark:text-red-400">
           <Typewriter
             words={["Developer", "Designer", "Writer", "Student"]}
             loop={5}
             cursor
             cursorStyle="|"
-            typeSpeed={50}
-            deleteSpeed={50}
+            typeSpeed={100}
+            deleteSpeed={80}
             delaySpeed={1000}
           />
         </p>
       </div>
       {/* Texts */}
 
-      <div className="lg:flex flex-col absolute hidden top-10 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 rounded-lg gap-5 shadow-xl ">
+      <div className="lg:flex flex-col absolute hidden top-10 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 rounded-lg gap-5 shadow-xl dark:bg-slate-900 dark:shadow-slate-700">
         <h1 className="text-4xl text-indigo-900 font-bold">Hi, I'm Mustafa</h1>
         <p className="text-gray-400">
           I'm a proactive 19-year-old exploring FULL-STACK developer, with one
