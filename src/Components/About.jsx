@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const About = () => {
   return (
-    <div className=" bg-white h-full w-full dark:bg-slate-900">
+    <div className=" bg-white h-full w-full  dark:bg-slate-900">
       <Navbar />
       <div className="container mx-auto flex-col-reverse lg:flex-row flex py-40 gap-40">
         {/* section one */}
@@ -16,11 +16,11 @@ const About = () => {
         {/* section two */}
         <div className=" mx-auto my-auto flex flex-wrap w-[50%] flex-col gap-3">
           <h1 className="text-indigo-600 font-bold font-nunito">About Me</h1>
-          <h1 className="text-3xl  font-nunito font-medium">Better Design</h1>
-          <h1 className="text-3xl  font-nunito font-medium">
+          <h1 className="text-3xl  font-nunito font-medium dark:text-white">Better Design</h1>
+          <h1 className="text-3xl  font-nunito font-medium dark:text-white">
             Better Experience
           </h1>
-          <p class="text-gray-400">
+          <p class="text-gray-400"> 
             I design and build digital products. I'm also a multi-disciplinary
             maker with over 10 years of experiences in wide range of design
             disciplines.

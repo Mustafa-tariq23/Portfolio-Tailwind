@@ -7,7 +7,9 @@ const Works = () => {
         {/* Top */}
         <div className="flex flex-col text-center items-center gap-3">
           <h1 className="text-indigo-600 font-bold font-nunito">PORTFOLIO</h1>
-          <h1 className="text-3xl  font-nunito">Works & Projects</h1>
+          <h1 className="text-3xl  font-nunito dark:text-white">
+            Works & Projects
+          </h1>
           <p class="w-1/2 text-center text-gray-400">
             I help designers, small agencies and businesses bring their ideas to
             life. Powered by Figma, VS Code and coffee, I turn your requirements

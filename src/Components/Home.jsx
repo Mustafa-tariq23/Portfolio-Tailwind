@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="dark:bg-slate-900">
       <Header />
       <About/>
       <Services/>
