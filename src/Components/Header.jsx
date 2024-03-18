@@ -17,11 +17,11 @@ const Header = () => {
         <div className="hidden lg:block absolute -bottom-[58%] right-0 left-0 mx-auto w-[48rem] h-[48rem] -z-10 rounded-full bg-indigo-900"></div>
       </div>
       {/* animated Text */}
-      <div className="absolute top-1/4 w-full text-center sm:text-left text-6xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-0 xl:text-7xl font-bold font-nunito">
+      <div className="absolute top-1/4 w-fit text-center sm:text-left text-4xl sm:text-4xl md:left-[10%] md:text-6xl sm:left-5 xl:left-0 xl:text-7xl font-bold font-nunito">
         <span className="text-gray-600 dark:text-gray-100">Frelance</span>
         <p id="typewriter" className="text-red-500 dark:text-red-400">
           <Typewriter
-            words={["Developer", "Designer", "Writer", "Student"]}
+            words={["Developer", "Designer", "Writer"]}
             loop={5}
             cursor
             cursorStyle="|"

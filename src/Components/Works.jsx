@@ -3,9 +3,9 @@ import React from "react";
 const Works = () => {
   return (
     <div>
-      <div className="container mx-auto mt-48 lg:m-auto pt-16 dark:bg-slate-900">
+      <div className="container mx-auto  lg:m-auto pt-16 dark:bg-slate-900">
         {/* Top */}
-        <div className="flex flex-col text-center items-center gap-3">
+        <div className="flex flex-col  m-10 sm:m-0 text-center items-center gap-3">
           <h1 className="text-indigo-600 font-bold font-nunito">PORTFOLIO</h1>
           <h1 className="text-3xl  font-nunito dark:text-white">
             Works & Projects

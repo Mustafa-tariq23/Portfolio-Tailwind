@@ -1,4 +1,3 @@
-// App.jsx
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./Components/NotFound";
@@ -9,7 +8,7 @@ import Works from "./Components/Works";
 import Contact from "./Components/Contact";
 function App() {
   return (
-    <div className="App">
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -18,7 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-
+import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 bg-white w-full  dark:bg-slate-900 dark:text-white z-30">
+    <div className="fixed top-0 bg-white w-full dark:bg-slate-900 dark:text-white z-50">
       <div className="container mx-auto py-5 flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <img className="w-16 sm:w-10" src="images/logo.png" alt="Logo Here" />
@@ -17,10 +17,12 @@ const Navbar = () => {
         </div>
         <ul className="md:flex hidden space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
           <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/">Home</Link>
+            <Link to="/" >Home</Link>
+            {/* <HashLink to="/Home.jsx">Link to Hash Fragment</HashLink> */}
           </li>
           <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/about">About me</Link>
+            {/* <Link to="/about">About me</Link> */}
+            <HashLink to="/about">About</HashLink>
           </li>
           <li className="hover:text-gray-400 ease-in duration-150">
             <Link to="/services">Services</Link>
@@ -29,7 +31,7 @@ const Navbar = () => {
             <Link to="/works">Works</Link>
           </li>
           <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/contacts">Contacts</Link>
+            <Link to="/contact">Contacts</Link>
           </li>
         </ul>
         <img
