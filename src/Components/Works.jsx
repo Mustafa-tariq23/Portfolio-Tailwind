@@ -2,7 +2,7 @@ import React from "react";
 
 const Works = () => {
   return (
-    <div>
+    <div id="work">
       <div className="container mx-auto  lg:m-auto pt-16 dark:bg-slate-900">
         {/* Top */}
         <div className="flex flex-col  m-10 sm:m-0 text-center items-center gap-3">

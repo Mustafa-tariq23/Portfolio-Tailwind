@@ -1,8 +1,9 @@
-import React from 'react'
-import Navbar from './Navbar'
-import { Link } from 'react-router-dom';
+import React from "react";
+import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-const Header = () => {  
+
+const Header = () => {
   return (
     <div className="h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900">
       <Navbar />
@@ -13,7 +14,7 @@ const Header = () => {
         alt="Mustafa Tariq"
       />
       {/* circle */}'
-      <div className='overflow-hidden'>
+      <div className="overflow-hidden">
         <div className="hidden lg:block absolute -bottom-[58%] right-0 left-0 mx-auto w-[48rem] h-[48rem] -z-10 rounded-full bg-indigo-900"></div>
       </div>
       {/* animated Text */}
@@ -32,7 +33,6 @@ const Header = () => {
         </p>
       </div>
       {/* Texts */}
-
       <div className="lg:flex flex-col absolute hidden top-10 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 rounded-lg gap-5 shadow-xl dark:bg-slate-900 dark:shadow-slate-700">
         <h1 className="text-4xl text-indigo-900 font-bold">Hi, I'm Mustafa</h1>
         <p className="text-gray-400">
@@ -49,6 +49,6 @@ const Header = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

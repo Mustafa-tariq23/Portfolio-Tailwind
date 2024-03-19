@@ -1,9 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar'
 
 const About = () => {
   return (
-    <div className=" bg-white h-full w-full  dark:bg-slate-900">
+    <div id='about' className=" bg-white h-full w-full  dark:bg-slate-900">
       <div className="container mx-auto flex-col-reverse lg:flex-row flex py-40 gap-24">
 
         <div className='w-full flex flex-col items-center lg:w-fit'>

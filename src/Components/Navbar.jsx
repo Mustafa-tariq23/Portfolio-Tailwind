@@ -1,8 +1,23 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import { HashLink } from "react-router-hash-link";
+import React, { useState,useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll/modules";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    if(theme === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+    else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme])
+  
+  const handleThemeSwitch = () =>{
+    console.log("moon image clicked")
+    setTheme(theme === 'dark'? 'light' : 'dark');
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,28 +31,72 @@ const Navbar = () => {
           <span className="text-xl font-semibold  sm:block">MUSTAFA TARIQ</span>
         </div>
         <ul className="md:flex hidden space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
-          <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/" >Home</Link>
-            {/* <HashLink to="/Home.jsx">Link to Hash Fragment</HashLink> */}
+          <li className="hover:text-gray-400 ease-in duration-150 cursor-pointer">
+            <LinkScroll
+              activeClass="active"
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Home
+            </LinkScroll>
           </li>
-          <li className="hover:text-gray-400 ease-in duration-150">
-            {/* <Link to="/about">About me</Link> */}
-            <HashLink to="/about">About</HashLink>
+          <li className="hover:text-gray-400 ease-in duration-150 cursor-pointer">
+            <LinkScroll
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              About me
+            </LinkScroll>
           </li>
-          <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/services">Services</Link>
+          <li className="hover:text-gray-400 ease-in duration-150 cursor-pointer">
+            <LinkScroll
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Services
+            </LinkScroll>
           </li>
-          <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/works">Works</Link>
+          <li className="hover:text-gray-400 ease-in duration-150 cursor-pointer">
+            <LinkScroll
+              activeClass="active"
+              to="work"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Works
+            </LinkScroll>
           </li>
-          <li className="hover:text-gray-400 ease-in duration-150">
-            <Link to="/contact">Contacts</Link>
+          <li className="hover:text-gray-400 ease-in duration-150 cursor-pointer">
+            <LinkScroll
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Contact
+            </LinkScroll>
           </li>
         </ul>
         <img
           src="images/moon.png"
           alt="moon img"
           className="w-7 hidden md:block cursor-pointer"
+          onClick={handleThemeSwitch}
         />
 
         <div
